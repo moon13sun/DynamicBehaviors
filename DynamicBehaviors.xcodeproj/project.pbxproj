@@ -13,6 +13,7 @@
 		F6EEA9271CFEF866002600B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9251CFEF866002600B2 /* AppDelegate.m */; };
 		F6EEA92A1CFEF8E0002600B2 /* STListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9291CFEF8E0002600B2 /* STListController.m */; };
 		F6EEA92D1CFEFFF3002600B2 /* STDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA92C1CFEFFF3002600B2 /* STDemoController.m */; };
+		F6EEA9301CFF07EC002600B2 /* STBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA92F1CFF07EC002600B2 /* STBasicView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		F6EEA9291CFEF8E0002600B2 /* STListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STListController.m; sourceTree = "<group>"; };
 		F6EEA92B1CFEFFF3002600B2 /* STDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoController.h; sourceTree = "<group>"; };
 		F6EEA92C1CFEFFF3002600B2 /* STDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoController.m; sourceTree = "<group>"; };
+		F6EEA92E1CFF07EC002600B2 /* STBasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBasicView.h; sourceTree = "<group>"; };
+		F6EEA92F1CFF07EC002600B2 /* STBasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBasicView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		F6EEA9261CFEF866002600B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6EEA92E1CFF07EC002600B2 /* STBasicView.h */,
+				F6EEA92F1CFF07EC002600B2 /* STBasicView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				F6EEA9271CFEF866002600B2 /* AppDelegate.m in Sources */,
 				F6EEA92D1CFEFFF3002600B2 /* STDemoController.m in Sources */,
 				F6EEA90B1CFEF7D6002600B2 /* main.m in Sources */,
+				F6EEA9301CFF07EC002600B2 /* STBasicView.m in Sources */,
 				F6EEA92A1CFEF8E0002600B2 /* STListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "STDemoController.h"
+#import "STBasicView.h"
 
 @interface STDemoController ()
 
@@ -17,9 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor magentaColor];
+//    self.view.backgroundColor = [UIColor magentaColor];
     
     self.navigationController.navigationBar.translucent = NO;
+    
+    STBasicView *basicView = [[STBasicView alloc] initWithFrame:self.view.bounds];
+    
+//    basicView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+    
+    [self.view addSubview:basicView];
     
 }
 

@@ -32,6 +32,8 @@
     //MARK: 1.设置 导航栏
     self.navigationItem.title = @"仿真行为列表";
     
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
     _behavioursArr = @[
                               @"吸附行为",
                               @"推动行为",
@@ -79,8 +81,13 @@
 #pragma mark - 2.实现代理方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    // 1.创建demoVc 对象
     STDemoController *demoCv = [[STDemoController alloc] init];
     
+    // 2.设置导航栏标题
+    demoCv.navigationItem.title = _behavioursArr[indexPath.row];
+    
+    // 3.跳转
     [self.navigationController pushViewController:demoCv animated:YES];
 }
 
