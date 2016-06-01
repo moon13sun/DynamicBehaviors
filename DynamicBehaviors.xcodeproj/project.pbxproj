@@ -12,6 +12,7 @@
 		F6EEA9191CFEF7D6002600B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EEA9171CFEF7D6002600B2 /* LaunchScreen.storyboard */; };
 		F6EEA9271CFEF866002600B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9251CFEF866002600B2 /* AppDelegate.m */; };
 		F6EEA92A1CFEF8E0002600B2 /* STListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9291CFEF8E0002600B2 /* STListController.m */; };
+		F6EEA92D1CFEFFF3002600B2 /* STDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA92C1CFEFFF3002600B2 /* STDemoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		F6EEA9251CFEF866002600B2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F6EEA9281CFEF8E0002600B2 /* STListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STListController.h; sourceTree = "<group>"; };
 		F6EEA9291CFEF8E0002600B2 /* STListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STListController.m; sourceTree = "<group>"; };
+		F6EEA92B1CFEFFF3002600B2 /* STDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoController.h; sourceTree = "<group>"; };
+		F6EEA92C1CFEFFF3002600B2 /* STDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 			children = (
 				F6EEA9281CFEF8E0002600B2 /* STListController.h */,
 				F6EEA9291CFEF8E0002600B2 /* STListController.m */,
+				F6EEA92B1CFEFFF3002600B2 /* STDemoController.h */,
+				F6EEA92C1CFEFFF3002600B2 /* STDemoController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6EEA9271CFEF866002600B2 /* AppDelegate.m in Sources */,
+				F6EEA92D1CFEFFF3002600B2 /* STDemoController.m in Sources */,
 				F6EEA90B1CFEF7D6002600B2 /* main.m in Sources */,
 				F6EEA92A1CFEF8E0002600B2 /* STListController.m in Sources */,
 			);

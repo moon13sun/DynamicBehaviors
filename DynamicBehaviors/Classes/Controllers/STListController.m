@@ -7,6 +7,7 @@
 //
 
 #import "STListController.h"
+#import "STDemoController.h"
 
 @interface STListController (){
     
@@ -73,6 +74,14 @@
     
     //MARK: - 3.返回cell
     return cell;
+}
+
+#pragma mark - 2.实现代理方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    STDemoController *demoCv = [[STDemoController alloc] init];
+    
+    [self.navigationController pushViewController:demoCv animated:YES];
 }
 
 @end
