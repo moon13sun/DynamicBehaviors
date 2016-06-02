@@ -24,6 +24,7 @@
 /* Begin PBXFileReference section */
 		F610CBC31CFFAD4500FBA57F /* STCollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollisionView.h; sourceTree = "<group>"; };
 		F610CBC41CFFAD4500FBA57F /* STCollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollisionView.m; sourceTree = "<group>"; };
+		F610CBC61CFFB3CC00FBA57F /* my.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my.h; sourceTree = "<group>"; };
 		F6EEA9061CFEF7D6002600B2 /* DynamicBehaviors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicBehaviors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EEA90A1CFEF7D6002600B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6EEA9151CFEF7D6002600B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		F6EEA8FD1CFEF7D6002600B2 = {
 			isa = PBXGroup;
 			children = (
+				F610CBC61CFFB3CC00FBA57F /* my.h */,
 				F6EEA9081CFEF7D6002600B2 /* DynamicBehaviors */,
 				F6EEA9071CFEF7D6002600B2 /* Products */,
 			);

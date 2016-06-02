@@ -35,12 +35,10 @@ typedef NS_ENUM(NSInteger,DynamicType) {
     
     self.navigationController.navigationBar.translucent = NO;
     
-//    STBasicView *basicView = [[STBasicView alloc] initWithFrame:self.view.bounds];
-//    
 //    [self.view addSubview:basicView];
     // 根据 index 值,来判断加载哪个仿真视图
     
-    // 定义一个父 view
+    // 定义一个父 view---> 这里是多态,父view对象 指向子类对象
     STBasicView *basicView;
     
     switch (self.index) {

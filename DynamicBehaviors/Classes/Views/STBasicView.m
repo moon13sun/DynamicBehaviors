@@ -33,11 +33,15 @@
     
     CGSize size = self.frame.size;
     
-    boxView.center = CGPointMake(size.width / 2, 100);
-    
-//    self.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+    boxView.center = CGPointMake(size.width * 0.5, 100);
     
     [self addSubview:boxView];
+    
+    //MARK: - 3.赋值
+    _boxView = boxView;
+    
+    //MRAK: - 4.创建仿真者
+    _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
     
 }
 
