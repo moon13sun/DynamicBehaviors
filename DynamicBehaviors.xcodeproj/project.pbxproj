@@ -62,6 +62,8 @@
 		F610CBC71CFFB86C00FBA57F /* Finish */ = {
 			isa = PBXGroup;
 			children = (
+				F6EEA9341CFF0BF2002600B2 /* STPushView.h */,
+				F6EEA9351CFF0BF2002600B2 /* STPushView.m */,
 				F6EEA92E1CFF07EC002600B2 /* STBasicView.h */,
 				F6EEA92F1CFF07EC002600B2 /* STBasicView.m */,
 				F6EEA9311CFF0BE2002600B2 /* STSnapView.h */,
@@ -149,8 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				F610CBC71CFFB86C00FBA57F /* Finish */,
-				F6EEA9341CFF0BF2002600B2 /* STPushView.h */,
-				F6EEA9351CFF0BF2002600B2 /* STPushView.m */,
 				F6EEA9371CFF0C0B002600B2 /* STAttachmentView.h */,
 				F6EEA9381CFF0C0B002600B2 /* STAttachmentView.m */,
 				F6EEA93A1CFF0C24002600B2 /* STSpringView.h */,
