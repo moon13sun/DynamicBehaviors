@@ -11,6 +11,12 @@
 @interface STPushView (){
     
     /**
+     *  push 仿真
+     */
+    
+    UIPushBehavior *_push;
+    
+    /**
      *  当前点
      */
     CGPoint _currentPoint;
@@ -36,24 +42,45 @@
         // 初始化界面  --> 这里不能调用 setupUI 方法
 //        [self setupUI];
         
-        //MARK: - 1.图片框
+        //MARK: - 1.添加起点图片框
+        // 1.图片框
         UIImageView *smallCircleV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AttachmentPoint_Mask"]];
         
         // 1.2隐藏图片框
         smallCircleV.hidden = YES;
         
-        smallCircleV.center = CGPointZero;
+//        smallCircleV.center = CGPointZero;
         
-        //MARK: - 2.添加到view 上
+        // 2.添加到view 上
         [self addSubview:smallCircleV];
         
-        //MARK: - 3.添加拖拽手势
+        // 3.赋值
+        _smallCircleView = smallCircleV;
+        
+        //MARK: - 2.添加仿真推动行为
+        // 1.创建仿真推动行为
+        UIPushBehavior *push = [[UIPushBehavior alloc] initWithItems:@[_boxView] mode:UIPushBehaviorModeContinuous];
+        
+        // 2.交给仿真者
+        [_animator addBehavior:push];
+        
+        // 3.赋值
+        _push = push;
+        
+        //MARK: - 3.添加仿真碰撞检测
+        UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[_boxView]];
+        
+        // 添加边界
+        collision.translatesReferenceBoundsIntoBoundary = YES;
+        
+        // 交给仿真者
+        [_animator addBehavior:collision];
+        
+        //MARK: - 3.添加手势行为
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
         
         [self addGestureRecognizer:pan];
-        
-        //MARK: - 4.赋值
-        _smallCircleView = smallCircleV;
+
         
     }
     return self;
@@ -84,10 +111,28 @@
         
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
         
-        // 隐藏 起点
+        // 1.隐藏 起点
         _smallCircleView.hidden = YES;
         
-        // 清除线条
+        // 2.让 boxView 移动
+        
+        // 计算力度 和角度
+        // 计算偏移量
+        CGFloat offsetX = _smallCircleView.center.x - _currentPoint.x;
+        CGFloat offsetY = _smallCircleView.center.y - _currentPoint.y;
+        
+        // 计算力度(斜边长度)
+        CGFloat distance = hypot(offsetY, offsetX);
+        
+        // 计算角度
+        CGFloat angle = atan2(offsetY, offsetX);
+        
+        // 3.设置仿真行为属性
+        _push.angle = angle;
+        _push.magnitude = distance;
+        _push.active = YES; // 单次推动需要打开
+        
+        // 4.清除线条
         _smallCircleView.center = CGPointZero;
         
         _currentPoint = CGPointZero;
