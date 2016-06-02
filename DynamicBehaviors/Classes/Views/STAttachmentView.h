@@ -8,6 +8,13 @@
 
 #import "STBasicView.h"
 
-@interface STAttachmentView : STBasicView
+@interface STAttachmentView : STBasicView{
+    
+    /**
+     *  附着行为
+     */
+    UIAttachmentBehavior *_attachment;
+
+}
 
 @end

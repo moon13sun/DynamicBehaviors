@@ -6,8 +6,8 @@
 //  Copyright © 2016年 WhiteHouse. All rights reserved.
 //
 
-#import "STBasicView.h"
+#import "STAttachmentView.h"
 
-@interface STSpringView : STBasicView
+@interface STSpringView : STAttachmentView
 
 @end

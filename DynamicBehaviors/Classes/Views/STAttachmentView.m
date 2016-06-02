@@ -10,10 +10,6 @@
 
 @interface STAttachmentView (){
     
-    /**
-     *  附着行为
-     */
-    UIAttachmentBehavior *_attachment;
     
     /**
      *  offset 图框
