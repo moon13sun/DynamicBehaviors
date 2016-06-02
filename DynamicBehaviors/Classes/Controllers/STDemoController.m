@@ -50,14 +50,14 @@ typedef NS_ENUM(NSInteger,DynamicType) {
         }
             break;
             
-        case DynamicAttachment:
+        case DynamicPush:
         {
             
             basicView = [[STPushView alloc] initWithFrame:self.view.bounds];
         }
             break;
             
-        case DynamicPush:
+        case DynamicAttachment:
         {
             
             basicView = [[STAttachmentView alloc] initWithFrame:self.view.bounds];
