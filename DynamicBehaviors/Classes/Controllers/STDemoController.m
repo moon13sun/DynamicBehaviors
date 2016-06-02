@@ -8,8 +8,23 @@
 
 #import "STDemoController.h"
 #import "STBasicView.h"
+#import "STSnapView.h"
+#import "STPushView.h"
+#import "STAttachmentView.h"
+#import "STSpringView.h"
+#import "STCollisionView.h"
+
+typedef NS_ENUM(NSInteger,DynamicType) {
+    
+    DynamicSnap,
+    DynamicPush,
+    DynamicAttachment,
+    DynamicSpring,
+    DynamicCollision
+};
 
 @interface STDemoController ()
+
 
 @end
 
@@ -18,23 +33,65 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.view.backgroundColor = [UIColor magentaColor];
-    
     self.navigationController.navigationBar.translucent = NO;
     
-    STBasicView *basicView = [[STBasicView alloc] initWithFrame:self.view.bounds];
+//    STBasicView *basicView = [[STBasicView alloc] initWithFrame:self.view.bounds];
+//    
+//    [self.view addSubview:basicView];
+    // 根据 index 值,来判断加载哪个仿真视图
     
-//    basicView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+    // 定义一个父 view
+    STBasicView *basicView;
+    
+    switch (self.index) {
+            
+        case DynamicSnap:
+        {
+            basicView = [[STSnapView alloc] initWithFrame:self.view.bounds];
+            
+        }
+            break;
+            
+        case DynamicAttachment:
+        {
+            
+            basicView = [[STPushView alloc] initWithFrame:self.view.bounds];
+        }
+            break;
+            
+        case DynamicPush:
+        {
+            
+            basicView = [[STAttachmentView alloc] initWithFrame:self.view.bounds];
+        }
+            break;
+            
+        case DynamicSpring:
+        {
+            basicView = [[STSpringView alloc] initWithFrame:self.view.bounds];
+            
+        }
+            break;
+            
+        case DynamicCollision:
+        {
+            
+            basicView = [[STCollisionView alloc] initWithFrame:self.view.bounds];
+        }
+            break;
+
+            
+        default:
+            break;
+    }
     
     [self.view addSubview:basicView];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-    
-}
+
+
+
 @end
 
 

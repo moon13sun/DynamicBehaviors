@@ -1,15 +1,13 @@
 //
-//  STBasicView.h
+//  STPushView.h
 //  DynamicBehaviors
 //
 //  Created by leergou on 16/6/1.
 //  Copyright © 2016年 WhiteHouse. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "STBasicView.h"
 
-@interface STBasicView : UIView
-
-
+@interface STPushView : STBasicView
 
 @end

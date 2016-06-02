@@ -35,6 +35,8 @@
     
     boxView.center = CGPointMake(size.width / 2, 100);
     
+//    self.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+    
     [self addSubview:boxView];
     
 }

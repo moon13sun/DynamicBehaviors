@@ -84,6 +84,9 @@
     // 1.创建demoVc 对象
     STDemoController *demoCv = [[STDemoController alloc] init];
     
+    // 1.1赋值 index
+    demoCv.index = indexPath.row;
+    
     // 2.设置导航栏标题
     demoCv.navigationItem.title = _behavioursArr[indexPath.row];
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F610CBC51CFFAD4500FBA57F /* STCollisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F610CBC41CFFAD4500FBA57F /* STCollisionView.m */; };
 		F6EEA90B1CFEF7D6002600B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA90A1CFEF7D6002600B2 /* main.m */; };
 		F6EEA9161CFEF7D6002600B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EEA9151CFEF7D6002600B2 /* Assets.xcassets */; };
 		F6EEA9191CFEF7D6002600B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EEA9171CFEF7D6002600B2 /* LaunchScreen.storyboard */; };
@@ -14,9 +15,15 @@
 		F6EEA92A1CFEF8E0002600B2 /* STListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9291CFEF8E0002600B2 /* STListController.m */; };
 		F6EEA92D1CFEFFF3002600B2 /* STDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA92C1CFEFFF3002600B2 /* STDemoController.m */; };
 		F6EEA9301CFF07EC002600B2 /* STBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA92F1CFF07EC002600B2 /* STBasicView.m */; };
+		F6EEA9331CFF0BE2002600B2 /* STSnapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9321CFF0BE2002600B2 /* STSnapView.m */; };
+		F6EEA9361CFF0BF2002600B2 /* STPushView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9351CFF0BF2002600B2 /* STPushView.m */; };
+		F6EEA9391CFF0C0B002600B2 /* STAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA9381CFF0C0B002600B2 /* STAttachmentView.m */; };
+		F6EEA93C1CFF0C24002600B2 /* STSpringView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEA93B1CFF0C24002600B2 /* STSpringView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F610CBC31CFFAD4500FBA57F /* STCollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollisionView.h; sourceTree = "<group>"; };
+		F610CBC41CFFAD4500FBA57F /* STCollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollisionView.m; sourceTree = "<group>"; };
 		F6EEA9061CFEF7D6002600B2 /* DynamicBehaviors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicBehaviors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EEA90A1CFEF7D6002600B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6EEA9151CFEF7D6002600B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +37,14 @@
 		F6EEA92C1CFEFFF3002600B2 /* STDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoController.m; sourceTree = "<group>"; };
 		F6EEA92E1CFF07EC002600B2 /* STBasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBasicView.h; sourceTree = "<group>"; };
 		F6EEA92F1CFF07EC002600B2 /* STBasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBasicView.m; sourceTree = "<group>"; };
+		F6EEA9311CFF0BE2002600B2 /* STSnapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSnapView.h; sourceTree = "<group>"; };
+		F6EEA9321CFF0BE2002600B2 /* STSnapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSnapView.m; sourceTree = "<group>"; };
+		F6EEA9341CFF0BF2002600B2 /* STPushView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPushView.h; sourceTree = "<group>"; };
+		F6EEA9351CFF0BF2002600B2 /* STPushView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPushView.m; sourceTree = "<group>"; };
+		F6EEA9371CFF0C0B002600B2 /* STAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAttachmentView.h; sourceTree = "<group>"; };
+		F6EEA9381CFF0C0B002600B2 /* STAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAttachmentView.m; sourceTree = "<group>"; };
+		F6EEA93A1CFF0C24002600B2 /* STSpringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSpringView.h; sourceTree = "<group>"; };
+		F6EEA93B1CFF0C24002600B2 /* STSpringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSpringView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +137,16 @@
 			children = (
 				F6EEA92E1CFF07EC002600B2 /* STBasicView.h */,
 				F6EEA92F1CFF07EC002600B2 /* STBasicView.m */,
+				F6EEA9311CFF0BE2002600B2 /* STSnapView.h */,
+				F6EEA9321CFF0BE2002600B2 /* STSnapView.m */,
+				F6EEA9341CFF0BF2002600B2 /* STPushView.h */,
+				F6EEA9351CFF0BF2002600B2 /* STPushView.m */,
+				F6EEA9371CFF0C0B002600B2 /* STAttachmentView.h */,
+				F6EEA9381CFF0C0B002600B2 /* STAttachmentView.m */,
+				F6EEA93A1CFF0C24002600B2 /* STSpringView.h */,
+				F6EEA93B1CFF0C24002600B2 /* STSpringView.m */,
+				F610CBC31CFFAD4500FBA57F /* STCollisionView.h */,
+				F610CBC41CFFAD4500FBA57F /* STCollisionView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,11 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6EEA9391CFF0C0B002600B2 /* STAttachmentView.m in Sources */,
 				F6EEA9271CFEF866002600B2 /* AppDelegate.m in Sources */,
 				F6EEA92D1CFEFFF3002600B2 /* STDemoController.m in Sources */,
 				F6EEA90B1CFEF7D6002600B2 /* main.m in Sources */,
+				F610CBC51CFFAD4500FBA57F /* STCollisionView.m in Sources */,
+				F6EEA9361CFF0BF2002600B2 /* STPushView.m in Sources */,
 				F6EEA9301CFF07EC002600B2 /* STBasicView.m in Sources */,
+				F6EEA93C1CFF0C24002600B2 /* STSpringView.m in Sources */,
 				F6EEA92A1CFEF8E0002600B2 /* STListController.m in Sources */,
+				F6EEA9331CFF0BE2002600B2 /* STSnapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +368,7 @@
 				F6EEA91F1CFEF7D6002600B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,10 @@
 
 @interface STDemoController : UIViewController
 
+/**
+ *  index
+ */
+@property (nonatomic,assign) NSInteger index;
+
+
 @end
